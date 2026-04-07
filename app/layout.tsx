@@ -26,8 +26,7 @@ const raleway = Raleway({
   adjustFontFallback: true,
 });
 
-const siteDescription =
-  'Member of the Technical Staff at OpenAI, working on Promptfoo and agent security. Previously co-founded Promptfoo, Arthena, and Matroid, and led engineering at Smile ID.';
+const siteDescription = 'Building things with code. Open to ideas.';
 
 export const metadata: Metadata = {
   title: {
@@ -37,13 +36,10 @@ export const metadata: Metadata = {
   description: siteDescription,
   keywords: [
     AUTHOR_NAME,
-    'OpenAI',
-    'Promptfoo',
-    'agent security',
-    'LLM security',
-    'machine learning',
-    'startup founder',
-    'YC',
+    'web development',
+    'TypeScript',
+    'open source',
+    'software engineer',
   ],
   authors: [{ name: AUTHOR_NAME }],
   creator: AUTHOR_NAME,
@@ -57,9 +53,9 @@ export const metadata: Metadata = {
     description: siteDescription,
     images: [
       {
-        url: '/images/me.jpg',
-        width: 1200,
-        height: 630,
+        url: '/images/avatar.svg',
+        width: 120,
+        height: 120,
         alt: AUTHOR_NAME,
       },
     ],
@@ -70,7 +66,7 @@ export const metadata: Metadata = {
     creator: TWITTER_HANDLE,
     title: AUTHOR_NAME,
     description: siteDescription,
-    images: ['/images/me.jpg'],
+    images: ['/images/avatar.svg'],
   },
   robots: {
     index: true,
