@@ -20,12 +20,12 @@ const data: ContactItem[] = [
     icon: faLinkedinIn,
   },
   {
-    link: 'https://github.com/mldangelo',
+    link: 'https://github.com/soldrag',
     label: 'Github',
     icon: faGithub,
   },
   {
-    link: 'https://x.com/dangelosaurus',
+    link: 'https://x.com/soldrag',
     label: 'X',
     icon: faTwitter,
   },

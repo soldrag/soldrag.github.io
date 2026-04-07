@@ -5,7 +5,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mldangelo/personal-site.git"
+    "url": "https://github.com/soldrag/soldrag.github.io.git"
   },
   "engines": {
     "node": "^20.19.0 || ^22.13.0 || >=24.0.0"

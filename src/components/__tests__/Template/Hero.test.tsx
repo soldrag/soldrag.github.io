@@ -15,29 +15,23 @@ describe('Hero', () => {
     render(<Hero />);
 
     const heading = screen.getByRole('heading', { level: 1 });
-    expect(heading).toHaveTextContent("Michael D'Angelo");
+    expect(heading).toHaveTextContent('soldrag');
   });
 
-  it('renders the tagline with OpenAI and promptfoo links', () => {
+  it('renders the tagline', () => {
     render(<Hero />);
 
-    const openAiLink = screen.getByRole('link', { name: /openai/i });
-    expect(openAiLink).toHaveAttribute('href', 'https://openai.com');
-    expect(openAiLink).toHaveClass('hero-highlight');
-
-    const promptfooLink = screen.getByRole('link', { name: /promptfoo/i });
-    expect(promptfooLink).toHaveAttribute('href', 'https://promptfoo.dev');
-    expect(promptfooLink).toHaveClass('hero-highlight');
+    expect(
+      screen.getByText('Building things with code. Open to ideas.'),
+    ).toBeInTheDocument();
   });
 
   it('displays hero chips for credentials', () => {
     render(<Hero />);
 
-    expect(screen.getByText('YC Alum')).toBeInTheDocument();
-    expect(screen.getByText('Stanford ICME')).toBeInTheDocument();
-    expect(
-      screen.getByText('Co-founded Arthena & Matroid'),
-    ).toBeInTheDocument();
+    expect(screen.getByText('Web')).toBeInTheDocument();
+    expect(screen.getByText('TypeScript')).toBeInTheDocument();
+    expect(screen.getByText('Open Source')).toBeInTheDocument();
   });
 
   it('renders CTA buttons with correct links', () => {
